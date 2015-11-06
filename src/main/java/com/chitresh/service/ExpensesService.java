@@ -34,7 +34,7 @@ public class ExpensesService {
     public String deleteExpenses(String code)  {
         Expenses expenses = expensesDao.findByCode(code);
         expensesDao.delete(expenses);
-        return "Success delete of customer";
+        return "Success delete";
     }
 
 }
